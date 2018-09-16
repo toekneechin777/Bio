@@ -37,16 +37,16 @@
 
   <body>
 
-  <div id="header" class="header">
+    <div id="header" class="header">
   		<div class="container">
   			<div class="row centered">
   				<div class="col-lg-4">
   					<!-- EDIT: name -->
-  					<h1>Anthony Chen</h1>
+  					<h1>Anthony L Chen</h1>
   				</div><!--/.col-lg-12 -->
   			</div><!--/.row -->
   		</div><!--/.container -->
-  	</div><!--/.header -->
+    </div><!--/.header -->
 
     <!-- Navigation Bar -->
     <nav class="topnav">
@@ -58,198 +58,102 @@
         <a href="#contact" class="w3-button w3-bar-item">Contact</a>
     </nav>
 
-    <div id=slide-show class=slide-show>
-        <!-- Slide Show -->
-        <div id=slide class=slide>
-          <section id=slide-show-img class=slide-show-img>
-            <img class="RecentEvent" src="images/italyrobot&ml.jpg">
-            <img class="RecentEvent" src="images/optum.jpg">
-            <img class="RecentEvent" src="images/robotswarm.jpg">
-          </section>
-
-          <div class=slide-descs>
-            <div class=slide-desc>
-                <h1> Robotics and Machine Learning in Italy </h1>
-                <h3> Yeahhh did some stuff in italy woot woot we did alot of eating and stuff and it was really fun.</h3>
-            </div>
-            <div class=slide-desc>
-                <h1> Optum Internship </h1>
-                <h3> Did some work and stuff </h3>
-            </div>
-            <div class=slide-desc>
-                <h1> Robot Swarm Research </h1>
-                <h3> Did some research </h3>
-            </div>
-          </div>
-
-          <div style="clear: both;"></div>
-
-          <div class=slide-show-indic>
-            <div class="slide-left" onclick="plusDivs(-1)">&#10094;</div>
-            <div class="slide-right" onclick="plusDivs(1)">&#10095;</div>
-            <span class="slide-dot" onclick="currentDiv(1)"></span>
-            <span class="slide-dot" onclick="currentDiv(2)"></span>
-            <span class="slide-dot" onclick="currentDiv(3)"></span>
-          </div>
-
-        </div>
-
-        <script>
-            // Automatic Slideshow - change image every 3 seconds
-            var myIndex = 1;
-            var isRotating = false;
-            var t;
-            slideshow();
-
-            function plusDivs(n) {
-              clearTimeout(t)
-              myIndex += n
-              isRotating = false;
-              slideshow();
-            }
-
-            function currentDiv(n) {
-              clearTimeout(t)
-              myIndex = n
-              isRotating = false;
-              slideshow();
-            }
-
-            function slideshow() {
-                var i;
-                var x = document.getElementsByClassName("RecentEvent");
-                var dots = document.getElementsByClassName("slide-dot");
-                var descs = document.getElementsByClassName("slide-desc");
-                if(isRotating) {myIndex++}
-                if (myIndex > x.length) {myIndex = 1}
-                if (myIndex < 1) {myIndex = x.length}
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                    descs[i].style.visibility = "hidden";
-                }
-                for (i = 0; i < dots.length; i++) {
-                  if(dots[i].classList.contains('activated')) {
-                    dots[i].classList.remove('activated');
-                  }
-                }
-                isRotating = true;
-                x[myIndex-1].style.display = "block";
-                dots[myIndex-1].classList.add('activated');
-                descs[myIndex-1].style.visibility = "visible";
-                t = setTimeout(slideshow, 10000);
-            }
-        </script>
+    <div class="background-tint">
+      <video autoplay muted loop id="background-vid">
+        <source src="images/Forest_15_3b_Videvo.mov" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </source>
+      </video>
     </div>
 
+    <script>
+      var vid = document.getElementById("background-vid");
+      vid.playbackRate = 0.85;
+    </script>
 
+    <div class="blue-tint">
+      <!-- Slide Show -->
+      <div id=slide class=slide>
+        <section id=slide-show-img class=slide-show-img>
+          <img class="RecentEvent" src="images/italyrobot&ml.jpg">
+          <img class="RecentEvent" src="images/optum.jpg">
+          <img class="RecentEvent" src="images/robotswarm.jpg">
+        </section>
 
-  	<section id="resume" name="resume"></section>
-  	<!-- EDUCATION SECTION -->
-  	<div class="container desc">
-  		<div class="row">
+        <div class=slide-descs>
+          <div class=slide-desc>
+              <h1> Robotics and Machine Learning in Italy </h1>
+              <h3> Yeahhh did some stuff in italy woot woot we did alot of eating and stuff and it was really fun.</h3>
+          </div>
+          <div class=slide-desc>
+              <h1> Optum Internship </h1>
+              <h3> Did some work and stuff </h3>
+          </div>
+          <div class=slide-desc>
+              <h1> Robot Swarm Research </h1>
+              <h3> Did some research </h3>
+          </div>
+        </div>
 
-  				<div class="col-lg-2 col-lg-offset-1">
-  					<h5>EDUCATION</h5>
-  				</div>
-  				<!-- EDIT: education line 1 -->
-  				<div class="col-lg-6">
-  					<p><t>Bachelor of Awesomeness</t><br/>
-  						University of Maryland
-  						<!--<br/><i>Extra info here</i>-->
-  					</p>
-  				</div>
-  				<div class="col-lg-3">
-  					<p><sm>Expected SPRING 2015</sm><br/>
-  					<imp><sm>IN PROGRESS</sm></imp>
-  					</p>
-  				</div>
+        <div style="clear: both;"></div>
 
-  				<!-- EDIT: education line 2 -->
-  				<div class="col-lg-6 col-lg-offset-3">
-  					<p><t>Associate of Degrees </t><br/>
-  						 Lil 'ol College
-  						<!--<br/><i>Extra info here</i>-->
-  					</p>
-  				</div>
-  				<div class="col-lg-3">
-  					<p><sm>JUNE 2012</sm></p>
-  				</div>
+        <div class=slide-show-indic>
+          <div class="slide-left" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="slide-right" onclick="plusDivs(1)">&#10095;</div>
+          <span class="slide-dot" onclick="currentDiv(1)"></span>
+          <span class="slide-dot" onclick="currentDiv(2)"></span>
+          <span class="slide-dot" onclick="currentDiv(3)"></span>
+        </div>
 
-  		</div><!--/.row -->
-  		<br>
-  		<hr>
-  	</div><!--/.container -->
+      </div>
 
-  	<!-- WORK SECTION -->
-  	<div class="container desc">
-  		<div class="row">
+      <script>
+          // Automatic Slideshow - change image every 3 seconds
+          var myIndex = 1;
+          var isRotating = false;
+          var t;
+          slideshow();
 
-  				<div class="col-lg-2 col-lg-offset-1">
-  					<h5>WORK</h5>
-  				</div>
-  				<!-- EDIT: work line 1 -->
-  				<div class="col-lg-6">
-  					<p class="tight"><t>Position </t><br/>
-  						Thatone Corp. <br/>
-  					</p>
-  					<p><more>Here's where you put a description of the position you held. Responsibilities, accomplishments - the same as you would do on a standard paper resume, but this will be online and look cooler.</more></p>
-  				</div>
-  				<div class="col-lg-3">
-  					<p><sm>AUGUST 2012 - CURRENT <br />
-  					CITY, STATE, COUNTRY</sm></p>
-  				</div>
+          function plusDivs(n) {
+            clearTimeout(t)
+            myIndex += n
+            isRotating = false;
+            slideshow();
+          }
 
-  				<!-- EDIT: work line 2-->
-  				<div class="col-lg-6 col-lg-offset-3">
-  					<p class="tight"><t>Previous Position</t><br/>
-  						Another Organization Ltd. <br/>
-  					</p>
-  					<p><more>You worked at another job! Great! Describe what you did there, include those responsibilities and accomplishments again.</more></p>
-  				</div>
-  				<div class="col-lg-3">
-  					<p><sm>JUNE 2010 - JULY 2012 <br />
-  					GOTHAM CITY, USA</sm></p>
-  				</div>
-  		</div><!--/.row -->
-  		<br>
-  		<hr>
-  	</div><!--/.container -->
+          function currentDiv(n) {
+            clearTimeout(t)
+            myIndex = n
+            isRotating = false;
+            slideshow();
+          }
 
+          function slideshow() {
+            var i;
+            var x = document.getElementsByClassName("RecentEvent");
+            var dots = document.getElementsByClassName("slide-dot");
+            var descs = document.getElementsByClassName("slide-desc");
+            if(isRotating) {myIndex++}
+            if (myIndex > x.length) {myIndex = 1}
+            if (myIndex < 1) {myIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+                descs[i].style.visibility = "hidden";
+            }
+            for (i = 0; i < dots.length; i++) {
+                if(dots[i].classList.contains('activated')) {
+                  dots[i].classList.remove('activated');
+                }
+              }
+              isRotating = true;
+              x[myIndex-1].style.display = "block";
+              dots[myIndex-1].classList.add('activated');
+              descs[myIndex-1].style.visibility = "visible";
+              t = setTimeout(slideshow, 10000);
+          }
+      </script>
+    </div>
 
-  	<!-- AWARDS SECTION -->
-  	<div class="container desc">
-  		<div class="row">
-  				<div class="col-lg-2 col-lg-offset-1">
-  					<h5>AWARDS</h5>
-  				</div>
-
-  				<!-- EDIT: awards line 1-->
-  				<div class="col-lg-6">
-  					<p><t>Best Smile Award</t><br/>
-  						Award-giving organization<br/>
-  					</p>
-  				</div>
-  				<div class="col-lg-3">
-  					<p><sm>NOVEMBER 2013</sm></p>
-  				</div>
-
-  				<!-- EDIT: awards line 2-->
-  				<div class="col-lg-6 col-lg-offset-3">
-  					<p class="tight"><t>Another award</t><br/>
-  						Awards Site
-  					</p>
-  					<p><more>This award has a description. You won it eating pie. Or probably doing something more job-related. Maybe you won't even keep this section - you'll replace it with Skills or something else!</more></p>
-  				</div>
-  				<div class="col-lg-3">
-  					<p><sm>2013</sm></p>
-  				</div>
-
-  		</div><!--/.row -->
-  		<br>
-  	</div><!--/.container -->
-
-
-  	<section id="contact" name="contact"></section>
   	<!--FOOTER DESCRIPTION -->
   	<div id="footwrap" class="footer">
   		<div class="container">

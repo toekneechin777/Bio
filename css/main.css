@@ -77,7 +77,6 @@ a:after {
 /* Header Wrap */
 .header {
   background: #3B5998;
- /* background: url(../images/header-bg.jpg) no-repeat center top; */
   padding-top:10px
   text-align:center;
   background-attachment: relative;
@@ -131,13 +130,68 @@ a:after {
 }
 
 /*------------------------------- Slideshow Wrap -------------------------------*/
-.slide-show {
-  background: #3B5998;
+
+.background-tint {
+  position: relative;
+  margin: 0 auto;
+}
+
+.background-tint video {
+  right: 0;
+  bottom: 0;
   width: 100%;
-  padding: 25px;
+  min-height: 100%;
+  display: block;
+}
+
+.background-tint:before{
+  content: '';
+  position: absolute;
+  background: rgba(59, 89, 152, 0.4);
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+/*.slide-show {
+  background: url(../images/GlacierNationalPark.jpg);
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  animation: moveBackground 105s linear infinite;
+  max-width: 10000px;
+  height: 100vh;
+  position: relative;
+}
+
+@keyframes moveBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+} */
+
+.blue-tint {
+  position: relative;
+  background: rgba(59, 89, 152, 0.6);
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: -600px;
+  left: 0px;
 }
 
 .slide {
+  position: absolute;
+  left: 15%;
+  top: 15%;
   background: #333;
   margin: auto;
   padding: 25px;
@@ -202,7 +256,7 @@ a:after {
 }
 
 .slide-dot:hover{
-  background-color: white;
+  background-color: #cccccc;
 }
 
 .activated{
@@ -232,6 +286,8 @@ a:after {
 /*------------------------------ Footer--------------------------------------*/
 .footer {
   background: #2f2f2f;
+  position: relative;
+  top: -6px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
