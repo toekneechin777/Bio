@@ -21,18 +21,6 @@
     <!-- Link the main.css stylesheet -->
     <link href="css/main.css" rel="stylesheet">
 
-
-    <!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
-
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -40,9 +28,10 @@
     <div id="header" class="header">
   		<div class="container">
   			<div class="row centered">
-  				<div class="col-lg-4">
+  				<div class="col-lg-12">
   					<!-- EDIT: name -->
   					<h1>Anthony L Chen</h1>
+            <a href="https://www.linkedin.com/in/anthony-chen-38baa1143" target="_blank"><img src="images/linkedin.png"></img></a>
   				</div><!--/.col-lg-12 -->
   			</div><!--/.row -->
   		</div><!--/.container -->
@@ -50,12 +39,26 @@
 
     <!-- Navigation Bar -->
     <nav class="topnav">
-        <a href="#home" class="w3-button w3-bar-item">Home</a>
-        <a href="index-final.html" class="w3-button w3-bar-item">About Me</a>
-        <a href="#experience" class="w3-button w3-bar-item"> Experience</a>
-        <a href="#tour" class="w3-button w3-bar-item">Research/Projects</a>
-        <a href="#blog" class="w3-button w3-bar-item">Personal Blog</a>
-        <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+        <a href="#home">Home</a>
+        <a href="index-final.html">About Me</a>
+        <div class="experience">
+          <button class="expbtn">Experience</button>
+          <div class="exp-content">
+            <a href="#">Education</a>
+            <a href="#">Work</a>
+          </div>
+        </div>
+        <div class="res-proj">
+          <button class="resprojbtn">Research/Projects</button>
+          <div class="resproj-content">
+            <a href="#">Research</a>
+            <a href="#">Personal</a>
+            <a href="#">Industry</a>
+            <a href="#">Miscellaneous</a>
+          </div>
+        </div>
+        <a href="#blog">Personal Blog</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <div class="background-tint">
@@ -70,6 +73,14 @@
       var vid = document.getElementById("background-vid");
       vid.playbackRate = 0.85;
     </script>
+
+    <div class="mission">
+      Striving to understand and solve problems using Innovative Technology and Research
+    </div>
+
+    <div class="update-title">
+      Recent Updates
+    </div>
 
     <div class="blue-tint">
       <!-- Slide Show -->
@@ -159,36 +170,7 @@
   		<div class="container">
   			<div class="row">
 
-  				<div class="col-lg-2 col-lg-offset-1">
-  					<h5>CONTACT</h5>
-  				</div>
-  				<!-- EDIT: email -->
-  				<div class="col-lg-6">
-  					<p><t>Email</t><br/>
-  						<a href="mailto:YOUR@EMAIL.com" target="_blank" class="mail">YOUR@EMAIL.com</a> <br/>
-  					</p>
-  					<!-- EDIT: address -->
-  					<p><t>Address</t><br/>
-  						123 Some St. <br/>
-  						City, State 01234 <br/>
-  						United States of America<br/>
-  					</p>
-  					<!-- EDIT: phone number -->
-  					<p><t>Phone</t><br/>
-  						<a href="tel:2345678901" class="tel">(234) 567-8901</a> <br/>
-  					</p>
-  				</div>
-  				<div class="col-lg-3">
-  					<p><sm>SOCIAL LINKS</sm></p>
-  					<p>
-  						<!-- EDIT: Social Links. Replace # with your URL for each -->
-  						<a href="#" target="_blank"><i class="icon-dribbble"></i></a>
-  						<a href="#" target="_blank"><i class="icon-twitter"></i></a>
-  						<a href="#" target="_blank"><i class="icon-facebook"></i></a>
-  						<a href="#" target="_blank"><i class="icon-linkedin"></i></a>
-  						<!--<a href="#" target="_blank"><i class="icon-github"></i></a>-->
-  					</p>
-  				</div>
+
   			</div><!--/.row -->
   		</div><!--/.container -->
   	</div><!--/ #footer -->

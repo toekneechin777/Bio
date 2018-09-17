@@ -1,5 +1,6 @@
 /* @copyright 2018 Anthony Chen, All rights reserved. */
 
+
 body {
   background-color: #f2f2f2;
   font-family: "Lato";
@@ -11,9 +12,11 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway";
+  text-align: left;
   font-weight: 300;
   color: #333;
 }
@@ -76,34 +79,37 @@ a:after {
 
 /* Header Wrap */
 .header {
-  background: #3B5998;
-  padding-top:10px
-  text-align:center;
+  background-image: linear-gradient(to top right, #004c91, #007DB8);
+  /*background-color: #004c91; */
+  padding-top:10px;
+  text-align: center;
   background-attachment: relative;
   background-position: center center;
   min-height: 100px;
   width: 100%;
-
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .header h1 {
-  font-size: 40px;
-  text-align: left;
+  font-size: 60px;
+  text-align: center;
   color: white;
 }
 
+.header a {
+  position: relative;
+  top: -60px;
+  left: 800px;
+}
+
+.header img {
+  width: 40px;
+  height: 40px;
+}
+
+
 /*---------------------Navigation Bar Wrap-------------------------*/
 .topnav {
-    background-color: #333;
+    background-image: linear-gradient(to top right, #333,#3d3d3d);
     overflow: hidden;
 }
 
@@ -118,7 +124,7 @@ a:after {
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.topnav a:hover, .experience:hover .expbtn, .res-proj:hover .resprojbtn {
     background-color: #ddd;
     color: black;
 }
@@ -128,6 +134,74 @@ a:after {
     background-color: #4CAF50;
     color: white;
 }
+
+.experience, .res-proj {
+  float: left;
+  overflow: hidden;
+}
+
+.experience .expbtn, .res-proj .resprojbtn {
+  background-color: inherit;
+  color: #f2f2f2;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 14px 16px;
+  font-family: inherit;
+  margin: 0;
+}
+
+.exp-content, .resproj-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.exp-content a, .resproj-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.exp-content a:hover, .resproj-content a:hover {
+  background-color: #ddd;
+}
+
+.experience:hover .exp-content, .res-proj:hover .resproj-content {
+  display:block;
+}
+
+/*-------------------------------Mission and Update----------------------------*/
+.mission {
+  width: 1000px;
+  height: 100px;
+  position: relative;
+  top: -1000px;
+  left: 450px;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+}
+
+
+.update-title {
+  background: #333;
+  width: 400px;
+  min-height: 50px;
+  position: relative;
+  top: -800px;
+  left: 720px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
 
 /*------------------------------- Slideshow Wrap -------------------------------*/
 
@@ -147,7 +221,7 @@ a:after {
 .background-tint:before{
   content: '';
   position: absolute;
-  background: rgba(59, 89, 152, 0.4);
+  background: rgba(0, 76, 145, 0.4);
   border-radius: 5px;
   top: 0;
   right: 0;
@@ -184,7 +258,7 @@ a:after {
   z-index: 1;
   height: 100%;
   width: 100%;
-  top: -600px;
+  top: -800px;
   left: 0px;
 }
 
@@ -286,8 +360,10 @@ a:after {
 /*------------------------------ Footer--------------------------------------*/
 .footer {
   background: #2f2f2f;
-  position: relative;
-  top: -6px;
+  position: absolute;
+  top: 1200px;
+  height: 200px;
+  width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
