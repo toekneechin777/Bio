@@ -31,7 +31,8 @@
   				<div class="col-lg-12">
   					<!-- EDIT: name -->
   					<h1>Anthony L Chen</h1>
-            <a href="https://www.linkedin.com/in/anthony-chen-38baa1143" target="_blank"><img src="images/linkedin.png"></img></a>
+            <a id="resume" href="Documents/Resume_Anthony_Chen.pdf" target="_blank"><b>Resume |</b></a>
+            <a id= "linkedin" href="https://www.linkedin.com/in/anthony-chen-38baa1143" target="_blank"><img src="images/linkedin.png"></img></a>
   				</div><!--/.col-lg-12 -->
   			</div><!--/.row -->
   		</div><!--/.container -->
@@ -39,26 +40,25 @@
 
     <!-- Navigation Bar -->
     <nav class="topnav">
-        <a href="#home">Home</a>
-        <a href="index-final.html">About Me</a>
+        <a href="index.html">Home</a>
+        <a href="html/about_me.html">About Me</a>
         <div class="experience">
           <button class="expbtn">Experience</button>
           <div class="exp-content">
-            <a href="#">Education</a>
-            <a href="#">Work</a>
+            <a href="html/education.html">Education</a>
+            <a href="html/work.html">Work</a>
           </div>
         </div>
         <div class="res-proj">
           <button class="resprojbtn">Research/Projects</button>
           <div class="resproj-content">
-            <a href="#">Research</a>
-            <a href="#">Personal</a>
-            <a href="#">Industry</a>
-            <a href="#">Miscellaneous</a>
+            <a href="html/research.html">Research</a>
+            <a href="html/personal_proj.html">Personal</a>
+            <a href="html/industry_proj.html">Industry</a>
           </div>
         </div>
-        <a href="#blog">Personal Blog</a>
-        <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
+        <a href="html/contact.html">Contact</a>
     </nav>
 
     <div class="background-tint">
@@ -75,103 +75,105 @@
     </script>
 
     <div class="mission">
-      Striving to understand and solve problems using Innovative Technology and Research
+      Striving to understand and solve problems using Artificial Intelligence and Data Science
     </div>
 
     <div class="update-title">
       Recent Updates
     </div>
 
-    <div class="blue-tint">
-      <!-- Slide Show -->
-      <div id=slide class=slide>
-        <section id=slide-show-img class=slide-show-img>
-          <img class="RecentEvent" src="images/italyrobot&ml.jpg">
-          <img class="RecentEvent" src="images/optum.jpg">
-          <img class="RecentEvent" src="images/robotswarm.jpg">
-        </section>
+    <div id=slide class=slide>
+      <section id=slide-show-img class=slide-show-img>
+        <img class="RecentEvent" src="images/italyrobot&ml.jpg">
+        <img class="RecentEvent" src="images/optum.jpg">
+        <img class="RecentEvent" src="images/robotswarm.jpg">
+      </section>
 
-        <div class=slide-descs>
-          <div class=slide-desc>
-              <h1> Robotics and Machine Learning in Italy </h1>
-              <h3> Yeahhh did some stuff in italy woot woot we did alot of eating and stuff and it was really fun.</h3>
-          </div>
-          <div class=slide-desc>
-              <h1> Optum Internship </h1>
-              <h3> Did some work and stuff </h3>
-          </div>
-          <div class=slide-desc>
-              <h1> Robot Swarm Research </h1>
-              <h3> Did some research </h3>
-          </div>
+      <div class=slide-descs>
+        <div class=slide-desc>
+            <h1> Robotics and Machine Learning in Italy </h1>
+            <h3> Last May, I was fortunate enough to participate in a study abroad in Italy to study
+                 Machine Learning and Robotics at some of the most prestigious universities in Italy.
+                 I also got to attend the IEEE 2018 International Symposium on Circuits & Systems in Florence
+                 while I was there.
+            </h3>
         </div>
-
-        <div style="clear: both;"></div>
-
-        <div class=slide-show-indic>
-          <div class="slide-left" onclick="plusDivs(-1)">&#10094;</div>
-          <div class="slide-right" onclick="plusDivs(1)">&#10095;</div>
-          <span class="slide-dot" onclick="currentDiv(1)"></span>
-          <span class="slide-dot" onclick="currentDiv(2)"></span>
-          <span class="slide-dot" onclick="currentDiv(3)"></span>
+        <div class=slide-desc>
+            <h1> Optum Internship </h1>
+            <h3> I returned this summer to Optum Technology. But this time I was able to work in the Advanced Technology Center
+                 under Matt Versaggi's Artificial Intelligence and Machine Learning team.</h3>
+            <a id="readmore" href="html/work.html#optumai">Read more</a>
         </div>
-
+        <div class=slide-desc>
+            <h1> Robot Swarm Research </h1>
+            <h3> Since January 2018, I've been fortunate to work on a Robot Swarms project with a PhD student under Maria Gini.</h3>
+            <h3> This Fall I am going to be under Directed Research on this project and expect to have a paper done by the end of the semester. </h3>
+            <a id="readmore" href="html/research.html#robotswarm">Read more</a>
+        </div>
       </div>
 
-      <script>
-          // Automatic Slideshow - change image every 3 seconds
-          var myIndex = 1;
-          var isRotating = false;
-          var t;
-          slideshow();
+      <div style="clear: both;"></div>
 
-          function plusDivs(n) {
-            clearTimeout(t)
-            myIndex += n
-            isRotating = false;
-            slideshow();
-          }
+      <div class=slide-show-indic>
+        <div class="slide-left" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="slide-right" onclick="plusDivs(1)">&#10095;</div>
+        <span class="slide-dot" onclick="currentDiv(1)"></span>
+        <span class="slide-dot" onclick="currentDiv(2)"></span>
+        <span class="slide-dot" onclick="currentDiv(3)"></span>
+      </div>
 
-          function currentDiv(n) {
-            clearTimeout(t)
-            myIndex = n
-            isRotating = false;
-            slideshow();
-          }
-
-          function slideshow() {
-            var i;
-            var x = document.getElementsByClassName("RecentEvent");
-            var dots = document.getElementsByClassName("slide-dot");
-            var descs = document.getElementsByClassName("slide-desc");
-            if(isRotating) {myIndex++}
-            if (myIndex > x.length) {myIndex = 1}
-            if (myIndex < 1) {myIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-                descs[i].style.visibility = "hidden";
-            }
-            for (i = 0; i < dots.length; i++) {
-                if(dots[i].classList.contains('activated')) {
-                  dots[i].classList.remove('activated');
-                }
-              }
-              isRotating = true;
-              x[myIndex-1].style.display = "block";
-              dots[myIndex-1].classList.add('activated');
-              descs[myIndex-1].style.visibility = "visible";
-              t = setTimeout(slideshow, 10000);
-          }
-      </script>
     </div>
+
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 1;
+        var isRotating = false;
+        var t;
+        slideshow();
+
+        function plusDivs(n) {
+          clearTimeout(t)
+          myIndex += n
+          isRotating = false;
+          slideshow();
+        }
+
+        function currentDiv(n) {
+          clearTimeout(t)
+          myIndex = n
+          isRotating = false;
+          slideshow();
+        }
+
+        function slideshow() {
+          var i;
+          var x = document.getElementsByClassName("RecentEvent");
+          var dots = document.getElementsByClassName("slide-dot");
+          var descs = document.getElementsByClassName("slide-desc");
+          if(isRotating) {myIndex++}
+          if (myIndex > x.length) {myIndex = 1}
+          if (myIndex < 1) {myIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+            descs[i].style.visibility = "hidden";
+          }
+          for (i = 0; i < dots.length; i++) {
+            if(dots[i].classList.contains('activated')) {
+              dots[i].classList.remove('activated');
+            }
+          }
+          isRotating = true;
+          x[myIndex-1].style.display = "block";
+          dots[myIndex-1].classList.add('activated');
+          descs[myIndex-1].style.visibility = "visible";
+          t = setTimeout(slideshow, 10000);
+        }
+    </script>
 
   	<!--FOOTER DESCRIPTION -->
   	<div id="footwrap" class="footer">
   		<div class="container">
-  			<div class="row">
-
-
-  			</div><!--/.row -->
+  			<p style="color:white; text-align: center; position: relative; bottom: 20px; margin: auto;">&copy; 2018 Anthony Chen All Rights Reserved. </p>
   		</div><!--/.container -->
   	</div><!--/ #footer -->
   </body>

@@ -1,12 +1,17 @@
 /* @copyright 2018 Anthony Chen, All rights reserved. */
-
+html {
+  height: 100%;
+}
 
 body {
   background-color: #f2f2f2;
   font-family: "Lato";
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.33vh;
   color: #555;
+  height: 100%;
+  margin: 0vh;
+  padding: 0vh;
 
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
@@ -22,8 +27,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  line-height: 28px;
-  margin-bottom: 25px;
+  line-height: 2.33vh;
+  margin-bottom: 2.0833vh;
 }
 
 .centered {
@@ -58,15 +63,6 @@ a:after {
   transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
- hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
 .center {
     display: block;
     margin-left: auto;
@@ -81,29 +77,42 @@ a:after {
 .header {
   background-image: linear-gradient(to top right, #004c91, #007DB8);
   /*background-color: #004c91; */
-  padding-top:10px;
+  padding-top:0.833vh;
   text-align: center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 100px;
+  min-height: 8.33vh;
   width: 100%;
 }
 
 .header h1 {
-  font-size: 60px;
+  font-size: 7vh;
   text-align: center;
   color: white;
 }
 
-.header a {
+#linkedin {
   position: relative;
-  top: -60px;
-  left: 800px;
+  top: -6vh;
+  left: 45%;
+}
+
+#resume:link, #resume:visited {
+  position: relative;
+  top: -5.5vh;
+  left: 45%;
+  font-size: 2.65vh;
+  font-family: "Verdana", "sans-serif";
+  color: white;
+}
+
+#resume:hover {
+  color: #87CEFA;
 }
 
 .header img {
-  width: 40px;
-  height: 40px;
+  width: 3.33vh;
+  height: 3.33vh;
 }
 
 
@@ -118,9 +127,9 @@ a:after {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1.5vh 1.8vh;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 2vh;
 }
 
 /* Change the color of links on hover */
@@ -145,8 +154,8 @@ a:after {
   color: #f2f2f2;
   border: none;
   outline: none;
-  font-size: 16px;
-  padding: 14px 16px;
+  font-size: 2vh;
+  padding: 1.5vh 1.8vh;
   font-family: inherit;
   margin: 0;
 }
@@ -155,15 +164,15 @@ a:after {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 19.5vh;
+  box-shadow: 0em 1em 1em 0em rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .exp-content a, .resproj-content a {
   float: none;
   color: black;
-  padding: 12px 16px;
+  padding: 1.5vh 1vh;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -179,27 +188,29 @@ a:after {
 
 /*-------------------------------Mission and Update----------------------------*/
 .mission {
-  width: 1000px;
-  height: 100px;
-  position: relative;
-  top: -1000px;
-  left: 450px;
+  width: 110vh;
+  height: 10vh;
+  position: absolute;
+  top: 35vh;
+  left: 50%;
+  margin: -5vh 0 0 -55vh;
   text-align: center;
   color: white;
-  font-size: 48px;
+  font-size: 5vh;
 }
 
 
 .update-title {
   background: #333;
-  width: 400px;
-  min-height: 50px;
-  position: relative;
-  top: -800px;
-  left: 720px;
+  width: 60vh;
+  min-height: 5vh;
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  margin: -2.5vh 0 0 -30vh;
   text-align: center;
   color: white;
-  font-size: 24px;
+  font-size: 3vh;
 }
 
 
@@ -222,7 +233,7 @@ a:after {
   content: '';
   position: absolute;
   background: rgba(0, 76, 145, 0.4);
-  border-radius: 5px;
+  border-radius: 1vh;
   top: 0;
   right: 0;
   bottom: 0;
@@ -252,42 +263,33 @@ a:after {
   }
 } */
 
-.blue-tint {
-  position: relative;
-  background: rgba(59, 89, 152, 0.6);
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  top: -800px;
-  left: 0px;
-}
 
 .slide {
   position: absolute;
-  left: 15%;
-  top: 15%;
+  left: 50%;
+  top: 52vh;
   background: #333;
-  margin: auto;
-  padding: 25px;
-  width: 70%;
+  margin: auto 0 0 -62.5vh;
+  padding: 2.5vh;
+  width: 125vh;
 }
 
 .slide-show-img {
   float: left;
-  margin-right: 10px;
+  margin-right: 1vh;
 }
 
 .RecentEvent {
-  height:400px;
-  width:600px;
+  height:35vh;
+  width:55vh;
 }
 
 .slide-show-indic {
   color:#fff;
   text-align: center;
-  margin-top: 16px;
-  margin-bottom: 0px;
-  font-size: 10px;
+  margin-top: 1.5vh;
+  margin-bottom: 0vh;
+  font-size: 1vh;
   position:relative;
   left:50%;
   bottom:0;
@@ -298,14 +300,14 @@ a:after {
 
 .slide-left{
   float: left;
-  font-size: 30px;
+  font-size: 3.5vh;
   width: 5%;
   cursor: pointer;
 }
 
 .slide-right{
   float: right;
-  font-size: 30px;
+  font-size: 3.5vh;
   width: 5%;
   cursor: pointer;
 }
@@ -320,8 +322,8 @@ a:after {
 
 .slide-dot{
   text-align: center;
-  height: 25px;
-  width: 25px;
+  height: 3vh;
+  width: 3vh;
   border-style: solid;
   border-color: white;
   display:inline-block;
@@ -340,11 +342,11 @@ a:after {
 .slide-descs {
   float: left;
   color:#fff;
-  margin-top: -25px;
+  margin-top: -0.5vh;
   text-align: left;
-  margin-left: 15px;
-  width: 570px;
-  font-size: 10px;
+  margin-left: 1.5vh;
+  width: 50vh;
+  font-size: 1vh;
   position: relative;
 }
 
@@ -352,20 +354,40 @@ a:after {
   position: absolute;
 }
 
-.slide-desc h1, h3{
+.slide-desc h1{
+  font-size: 4vh;
+  color: white;
+}
+
+.slide-desc h3 {
+  font-size: 2vh;
   color: white;
 }
 
 
+#readmore:link, #readmore:visited {
+  background-color: #004c91;
+  color: white;
+  font-size: 2vh;
+  padding: 1.4vh 2.5vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#readmore:hover, #readmore:active {
+  background-color: #007DB8;
+}
+
 /*------------------------------ Footer--------------------------------------*/
 .footer {
   background: #2f2f2f;
-  position: absolute;
-  top: 1200px;
-  height: 200px;
+  position: relative;
+  top: 0vh;
+  height: 10vh;
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 .footer p {
@@ -382,14 +404,14 @@ a:after {
 
 /* social icons: */
 .footer i {
-  padding-right: 8px;
+  padding-right: 0.8vh;
   /*color: #1abc9c;*/
 }
 
 /* Global Values */
 
 .desc {
-  padding-top: 50px;
+  padding-top: 5vh;
 }
 
 .desc p {
@@ -402,7 +424,7 @@ a:after {
 }
 
 .desc imp {
-  padding: 6px;
+  padding: 0.5vh;
   color: white;
   background: #34495e;
 }
@@ -413,7 +435,7 @@ a:after {
 
 
 sm {
-  font-size: 12px;
+  font-size: 1.2vh;
 }
 
 .desc .col-lg-3 {
@@ -421,7 +443,7 @@ sm {
 }
 
 .container .row p.tight {
-  margin-bottom: 10px;
+  margin-bottom: 0.5vh;
 }
 
 /* define some CSS3 animations: */

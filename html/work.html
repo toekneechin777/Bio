@@ -1,0 +1,211 @@
+<!-- @copyright 2018 Anthony Chen, All rights reserved. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- OPTIONAL: description -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="icon.png" />
+
+		<!-- EDIT: title -->
+    <title>Anthony L Chen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+    <!-- Link the main.css stylesheet -->
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/education.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div id="header" class="header">
+  		<div class="container">
+  			<div class="row centered">
+  				<div class="col-lg-12">
+  					<!-- EDIT: name -->
+  					<h1>Anthony L Chen</h1>
+            <a id="resume" href="../Documents/Resume_Anthony_Chen.pdf" target="_blank"><b>Resume |</b></a>
+            <a id= "linkedin" href="https://www.linkedin.com/in/anthony-chen-38baa1143" target="_blank"><img src="../images/linkedin.png"></img></a>
+  				</div><!--/.col-lg-12 -->
+  			</div><!--/.row -->
+  		</div><!--/.container -->
+    </div><!--/.header -->
+
+    <!-- Navigation Bar -->
+    <nav class="topnav">
+        <a href="../index.html">Home</a>
+        <a href="about_me.html">About Me</a>
+        <div class="experience">
+          <button class="expbtn">Experience</button>
+          <div class="exp-content">
+            <a href="education.html">Education</a>
+            <a href="work.html">Work</a>
+          </div>
+        </div>
+        <div class="res-proj">
+          <button class="resprojbtn">Research/Projects</button>
+          <div class="resproj-content">
+            <a href="research.html">Research</a>
+            <a href="personal_proj.html">Personal</a>
+            <a href="industry_proj.html">Industry</a>
+          </div>
+        </div>
+        <a href="#blog">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="flex_container">
+      <div class="education_container">
+
+        <div class="title">
+          <h1><b> Work Experience </b></h1>
+        </div>
+
+        <div id="optumai_pic" class="blue">
+          <p id="optumai_name" class="name"><b> Optum Tech: AI/ML Research & Dev Intern </b></p>
+          <img id="optumai_clip" class="drop-down-img" src="../images/optumai_2.png">
+            <button onclick="dropdown('optumai','optumai_name', 'optumai_pic')" class="dropbtn"></button>
+          </img>
+        </div>
+        <div id="optumai" class="drop-info">
+          <div class="drop-left">
+            <p>
+              <b>Position:</b> Artificial Intelligence/Machine Learning R&D Intern </br>
+              <b>Manager:</b> <a href="https://www.linkedin.com/in/versaggi/">Matthew Versaggi</a> </br>
+              <b>Date:</b> June-August 2018 </br>
+              <b>Location:</b> Eden Prairie, Minnesota </br>
+              <b>Tools:</b> Neo4j, Python, Tensorflow, Scikit-learn, Flask/HTML  </br>
+            </p>
+          </div>
+          <div class="drop-right">
+            <h2> Job Description </h2>
+            <ul>
+              <li> Summer Project on Provider Fraud Detection using AI/ML</li>
+              <li> Developed a Graph Database for storing Provider information under customized schema </li>
+              <li> Wrote automated queries that ran social network analysis algorithms that measure the amount of risk in the graph </li>
+              <li> Risk Factors are stored in Table that is reordered and weighted with Reinforced Learning through a built UI </li>
+              <li> Built an Image Recognition Classifier that takes an Open Street View image through an address and classifies the potential risk that this address/provider is fraudulent.
+                   The method for this Image Classifier is currently pending on patent review. </li>
+            </ul>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+
+        <div id="umnta_pic" class="blue">
+          <p id="umnta_name" class="name"><b> University of Minnesota: CS Teaching Assistant</b></p>
+          <img class="drop-down-img" src="../images/keller.jpg">
+            <button onclick="dropdown('umnta','umnta_name', 'umnta_pic')" class="dropbtn"></button>
+          </img>
+        </div>
+        <div id="umnta" class="drop-info">
+          <div class="drop-left">
+            <p>
+              <b>Position:</b> Machine Architecture & Organization TA </br>
+              <b>Manager:</b> Lecturer <a href="https://www-users.cs.umn.edu/~kauffman/">Chris Kauffman</a> </br>
+              <b>Date:</b> Spring Semester January-May 2018 </br>
+              <b>Location:</b> University of Minnesota </br>
+              <b>Tools:</b> Canvas, C, x84 Assembly </br>
+            </p>
+            <p>
+              <b>Position:</b> Computational Linear Algebra TA </br>
+              <b>Manager:</b> Lecturer <a href="https://www-users.cs.umn.edu/~carl/">Carl Sturtivant</a></br>
+              <b>Date:</b> Fall Semester September-Currently </br>
+              <b>Location:</b> University of Minnesota </br>
+              <b>Tools:</b> Gradescope, Moodle
+            </p>
+          </div>
+          <div class="drop-right">
+            <h2> Job Description </h2>
+            <ul>
+              <li> Assisted in the Machine Architecture & Org class (CSCI 2021) </li>
+              <li> Lead weekly discussions on computer architecture concepts and code </li>
+              <li> Proctored midterms as well as graded projects/exams </li>
+              <li> Held weekly office hours to assist students one on one </li>
+            </ul>
+          </br>
+            <ul>
+              <li> Assisted in the Elementary Computational Linear Algebra class (CSCI 2033) </li>
+              <li> Proctored and Graded Weekly Quizzes </li>
+              <li> Held weekly office hours to assist students one on one </li>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+
+        <div id="optumbd_pic" class="blue">
+          <p id="optumbd_name" class="name"><b> Optum Tech: Big Data Engineer Intern </b></p>
+          <img class="drop-down-img" src="../images/optum_place.jpg">
+            <button onclick="dropdown('optumbd','optumbd_name', 'optumbd_pic')" class="dropbtn"></button>
+          </img>
+        </div>
+        <div id="optumbd" class="drop-info">
+          <div class="drop-left">
+            <p>
+              <b>Position:</b> Big Data Software Engineering Intern</br>
+              <b>Company:</b> Optum Technology of United Health Group </br>
+              <b>Manager:</b> <a href="https://www.linkedin.com/in/amit-satyawadi-624212/"> Amit Satyawadi </a> & <a href="https://www.linkedin.com/in/irfan-javed-9741631/">Irfan Javed</a><br/>
+              <b>Date:</b> June-August 2017 <br/>
+              <b>Location:</b> Minnetonka, MN <br/>
+              <b>Tools Used:</b> Hadoop, HBase, Hive, JAVA, Unix Bash Scripts <br/>
+            </p>
+          </div>
+          <div class="drop-right">
+            <h2> Job Description </h2>
+            <ul>
+              <li> Assisted in Data Lake Team for Optum’s Big Data Platform
+              <li> Wrote Transporter/Timestamp Bash Scripts to measure and improve the ingestion time of incoming data in the data lake </li>
+              <li> Design and wrote Java Code for creating a new dashboard monitor for the Data Lake. Purpose of program was to visually display the ingestion progress of data files and be able to email/notify the appropriate team to fix a process if the ingestion time took over 10 minutes. </li>
+              <li> Wrote Hive Queries to analyze the volume, velocity, and variety of data in the Data Lake. </li>
+              <li> Worked with a group of interns on an automation team to design an automation regression framework for improving time, enhance quality, and promote reusability within their Data Fabric 2.0. (Design included detailed logic diagram, collaboration diagram, referential integrity diagram, sequence diagram, etc.) </li>
+              <li> Manipulated and transferred HBase tables connected into database through JDBC into a table on a dashboard. </li>
+            <ul>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+
+        <script>
+          function dropdown(dropID, name, blue) {
+            document.getElementById(dropID).classList.toggle("show");
+            document.getElementById(name).classList.toggle("hide");
+            document.getElementById(blue).classList.toggle("clear");
+          }
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+
+              var dropdowns = document.getElementsByClassName("drop-info");
+              var names = document.getElementsByClassName("name");
+              var highlight = document.getElementsByClassName("blue");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                var openNames = names[i];
+                var openhighlights = highlight[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                  openNames.classList.remove("hide");
+                  openhighlights.classList.remove("clear");
+                }
+              }
+          }
+        }
+        </script>
+
+      </div>
+    </div>
+
+
+    <!--FOOTER DESCRIPTION -->
+  	<div id="footwrap" class="footer">
+  		<div class="container">
+  			<p style="color:white; text-align: center; position: relative; bottom: 20px; margin: auto;">&copy; 2018 Anthony Chen All Rights Reserved. </p>
+  		</div><!--/.container -->
+  	</div><!--/ #footer -->
+  </body>
+</html>

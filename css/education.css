@@ -1,0 +1,156 @@
+
+.flex_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.education_container {
+  position:relative;
+  width: 100%;
+  min-height: 50em;
+  margin-bottom: 2em;
+  flex: 1;
+}
+
+.education_container h1{
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-image: linear-gradient(to top right, #004c91, #007DB8);
+  height: 2em;
+  position: relative;
+  top: -0.6em;
+  padding-top: 0.2em;
+}
+
+
+.blue {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 25em;
+  top: 1em;
+  width: 80%;
+  margin-top: 2em;
+}
+
+.blue p {
+  color: white;
+  font-size: 3em;
+  position: absolute;
+  font-family: "Verdana", "sans-serif";
+  top: 3.5em;
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+  bottom: 2em;
+}
+
+.blue:hover p {
+  display: none;
+}
+
+.blue::before{
+  content: '';
+  position: absolute;
+  background: rgba(0, 76, 145, 0.4);
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.blue:hover:before{
+  background: rgba(0, 0, 0, 0);
+}
+
+.dropbtn {
+  position: absolute;
+  top: 0em;
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+}
+
+.drop-down-img {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: solid 1em #333;'
+}
+
+.drop-info {
+  top: 0;
+  min-height: 20em;
+  flex-direction: column;
+  width: 80%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #333;
+  color: white;
+  display: none;
+  padding: 2em;
+}
+
+.drop-left {
+  float: left;
+  background-image: linear-gradient(to top right, #004c91, #007DB8);
+  height: 100%;
+  width: 35%;
+  padding: 0.5em;
+  flex: 1;
+}
+
+.drop-left p {
+  font-family: "Verdana", "sans-serif";
+}
+
+.drop-right {
+  background-color: #D3D3D3;
+  height: 100%;
+  width: 63%;
+  float: right;
+  padding: 0.5em;
+  flex: 1;
+}
+
+.classes {
+  -webkit-columns: 100px 3; /* Chrome, Safari, Opera */
+  -moz-columns: 100px 3; /* Firefox */
+  columns: 100px 3;
+}
+
+
+.drop-right p, li{
+  color: black;
+  font-family: "Verdana", "sans-serif";
+}
+
+.drop-right h2 {
+  color: black;
+  font-family: "Verdana", "sans-serif";
+  text-align: center;
+}
+
+.clear {
+  background: rgba(0, 0, 0, 0);
+}
+
+.clear::before {
+  content: '';
+  background: rgba(0, 0, 0, 0);
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

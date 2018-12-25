@@ -1,0 +1,59 @@
+.profile_container {
+  position:relative;
+  width: 100%;
+  height: 100%;
+}
+
+.left_profile {
+  float: left;
+  width: 35%;
+  background-image: linear-gradient(to top right, #004c91, #007DB8);
+  height: 100%;
+
+}
+
+.right_profile {
+  width: 65%;
+  height: 100%;
+  float: right;
+  padding-right: 3em;
+}
+
+.my-pic {
+  position: relative;
+  top: 30px;
+  left: 10%;
+  padding: 30px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.prof-box {
+  padding: 20px;
+  position: relative;
+  top: 10%;
+  height: 35%;
+  width: 80%;
+  left: 10%;
+  background-color: #333;
+}
+
+.prof-box p {
+  color: white;
+  font-size: 1em;
+  font-family: "Verdana", "sans-serif";
+}
+
+.right_profile h1{
+  text-align: center;
+  color: black;
+}
+
+.right_profile p {
+  color: black;
+  text-align: left;
+  padding-left: 175px;
+  padding-top: 50px;
+  font-size: 1.75em;
+  font-family: "Verdana", "sans-serif";
+}
