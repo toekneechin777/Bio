@@ -17,10 +17,11 @@
   text-transform: uppercase;
   color: white;
   background-image: linear-gradient(to top right, #004c91, #007DB8);
-  height: 2em;
+  height: 5vh;
   position: relative;
   top: -0.6em;
-  padding-top: 0.2em;
+  padding-top: 0.2vh;
+  font-size: 4vh;
 }
 
 
@@ -36,11 +37,13 @@
 
 .blue p {
   color: white;
-  font-size: 3em;
+  line-height: normal;
+  font-size: 5vh;
   position: absolute;
   font-family: "Verdana", "sans-serif";
-  top: 3.5em;
+  top: 40%;
   display: block;
+  margin-top: -5vh;
   margin-left: 5%;
   margin-right: 5%;
   bottom: 2em;
