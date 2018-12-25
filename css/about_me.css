@@ -16,20 +16,21 @@
   width: 65%;
   height: 100%;
   float: right;
-  padding-right: 3em;
+  padding-right: 3vh;
 }
 
 .my-pic {
   position: relative;
-  top: 30px;
+  top: 3vh;
   left: 10%;
-  padding: 30px;
+  width: 80%;
+  padding: 3vh;
   background-color: #333;
   border-radius: 50%;
 }
 
 .prof-box {
-  padding: 20px;
+  padding: 2vh;
   position: relative;
   top: 10%;
   height: 35%;
@@ -40,7 +41,7 @@
 
 .prof-box p {
   color: white;
-  font-size: 1em;
+  font-size: 1.75vh;
   font-family: "Verdana", "sans-serif";
 }
 
@@ -52,8 +53,8 @@
 .right_profile p {
   color: black;
   text-align: left;
-  padding-left: 175px;
-  padding-top: 50px;
-  font-size: 1.75em;
+  padding-left: 13.5vh;
+  padding-top: 5vh;
+  font-size: 2.5vh;
   font-family: "Verdana", "sans-serif";
 }
