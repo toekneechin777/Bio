@@ -16,10 +16,11 @@
   text-transform: uppercase;
   color: white;
   background-image: linear-gradient(to top right, #004c91, #007DB8);
-  height: 2em;
+  height: 5vh;
   position: relative;
-  top: -0.6em;
-  padding-top: 0.2em;
+  top: -2vh;
+  padding-top: 0.2vh;
+  font-size: 4vh;
 }
 
 .research_proj {
@@ -58,4 +59,13 @@
   flex: 1;
   float: right;
   color: black;
+}
+
+.research_info h2 {
+  font-size: 3vh;
+}
+
+.research_info p {
+  font-size: 2vh;
+  font-height: normal;
 }

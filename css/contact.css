@@ -18,7 +18,7 @@
 }
 
 .contact {
-  top: -10px;
+  top: -1vh;
   padding-left: 5em;
   padding-top: 5em;
   height: 80%;
@@ -26,5 +26,5 @@
 }
 
 .contact p {
-  font-size: 20px;
+  font-size: 2vh;
 }
