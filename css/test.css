@@ -5,7 +5,7 @@ html {
 
 body {
   background-color: #f2f2f2;
-  font-family: "Lato", san-serif;
+  font-family: "Lato";
   font-weight: 300;
   font-size: 1.33vh;
   color: #555;
@@ -88,23 +88,6 @@ a:after {
   color: white;
 }
 
-#linkedin {
-  top: 0.5vh;
-  position: relative;
-}
-
-#resume:link, #resume:visited {
-  position: relative;
-  text-decoration: none;
-  font-size: 2.65vh;
-  font-family: "Verdana", "sans-serif";
-  color: white;
-}
-
-#resume:hover {
-  color: #87CEFA;
-}
-
 .header img {
   width: 3.33vh;
   height: 3.33vh;
@@ -135,52 +118,6 @@ a:after {
 
 .head_container:after {
   clear: both;
-}
-
-.me {
-  float: left;
-  width: 25%;
-}
-
-.head {
-  float: left;
-  width: 50%;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.head h1{
-  text-align: center;
-}
-
-.head:before,
-.head:after {
-  display: table;
-  content: " ";
-}
-
-.head:after {
-  clear: both;
-}
-
-.head:before,
-.head:after {
-  display: table;
-  content: " ";
-}
-
-.head:after {
-  clear: both;
-}
-
-.links_container {
-  float: left;
-  top: 7vh;
-  width: 10%;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 
@@ -255,31 +192,8 @@ a:after {
 }
 
 /*-------------------------------Mission and Update----------------------------*/
-.mission {
-  width: 110vh;
-  height: 10vh;
-  position: absolute;
-  top: 35vh;
-  left: 50%;
-  margin: -5vh 0 0 -55vh;
-  text-align: center;
-  color: white;
-  font-size: 5vh;
-}
 
 
-.update-title {
-  background: #333;
-  width: 60vh;
-  min-height: 5vh;
-  position: absolute;
-  top: 50vh;
-  left: 50%;
-  margin: -2.5vh 0 0 -30vh;
-  text-align: center;
-  color: white;
-  font-size: 3vh;
-}
 
 
 /*------------------------------- Slideshow Wrap -------------------------------*/
@@ -309,150 +223,8 @@ a:after {
 }
 
 
-.slide {
-  position: absolute;
-  left: 50%;
-  top: 52vh;
-  background: #333;
-  margin: auto 0 0 -62.5vh;
-  padding: 2.5vh;
-  width: 125vh;
-  height: 40vh;
-}
-
-.slide-show-img {
-  float: left;
-  margin-right: 1vh;
-}
-
-.RecentEvent {
-  height:35vh;
-  width:55vh;
-}
-
-.slide-show-indic {
-  color:#fff;
-  text-align: center;
-  margin-top: 1.5vh;
-  margin-bottom: 0vh;
-  font-size: 1vh;
-  position:relative;
-  left:50%;
-  bottom:0;
-  transform:translate(-50%,0%);
-  -ms-transform:translate(-50%,0%);
-  -webkit-transform:translate(-50%,0%);
-}
-
-.slide-left{
-  float: left;
-  font-size: 3.5vh;
-  width: 5%;
-  cursor: pointer;
-}
-
-.slide-right{
-  float: right;
-  font-size: 3.5vh;
-  width: 5%;
-  cursor: pointer;
-}
-
-.slide-left:hover{
-  color:#A9A9A9;
-}
-
-.slide-right:hover{
-  color:#A9A9A9;
-}
-
-.slide-dot{
-  text-align: center;
-  height: 3vh;
-  width: 3vh;
-  border-style: solid;
-  border-color: white;
-  display:inline-block;
-  border-radius:50%;
-  cursor: pointer;
-}
-
-.slide-dot:hover{
-  background-color: #cccccc;
-}
-
-.activated{
-  background-color: white;
-}
-
-.slide-descs {
-  float: left;
-  color:#fff;
-  margin-top: -0.5vh;
-  text-align: left;
-  margin-left: 1.5vh;
-  width: 50vh;
-  font-size: 1vh;
-  position: relative;
-}
-
-.slide-desc {
-  position: absolute;
-}
-
-.slide-desc h1{
-  font-size: 4vh;
-  color: white;
-}
-
-.slide-desc h3 {
-  font-size: 2vh;
-  color: white;
-}
-
-
-#readmore:link, #readmore:visited {
-  background-color: #004c91;
-  color: white;
-  font-size: 2vh;
-  padding: 1.4vh 2.5vh;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-#readmore:hover, #readmore:active {
-  background-color: #007DB8;
-}
-
 /*------------------------------ Footer--------------------------------------*/
-.footer {
-  background: #2f2f2f;
-  position: relative;
-  top: 0vh;
-  height: 10vh;
-  width: 100%;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-}
 
-.footer p {
-  color: white;
-}
-
-.footer h5 {
-  color: white;
-}
-
-.footer t {
-  font-weight: 700;
-}
-
-/* social icons: */
-.footer i {
-  padding-right: 0.8vh;
-  /*color: #1abc9c;*/
-}
 
 /* Global Values */
 
@@ -658,8 +430,6 @@ body {
 @media (min-width: 768px) and (max-width: 1024px) {
 
   .head {
-    margin-right: 0px;
-    margin-left: 0px;
     width: 100%;
     height: 15vh;
   }
@@ -689,7 +459,6 @@ body {
   }
 
   .links_container {
-    top: 0vh;
     width: 100%;
     margin-bottom: 1vh;
     position: relative;
