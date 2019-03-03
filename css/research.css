@@ -99,7 +99,41 @@
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
-  //CSS
+  .research_container h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-image: linear-gradient(to top right, #004c91, #007DB8);
+    height: 5vh;
+    position: relative;
+    top: -2.67vh;
+    padding-top: 0.2vh;
+    font-size: 4vh;
+  }
+
+  .research_desc {
+    width: 95%;
+    padding: 1em;
+    height: 100%;
+    background-color: #333;
+    flex: 1;
+  }
+
+  .research_desc img {
+    float: left;
+    width: 48%;
+    height: 100%;
+  }
+
+  .research_info {
+    background-color: #D3D3D3;
+    width: 48%;
+    height: 100%;
+    padding: 1em;
+    flex: 1;
+    float: right;
+    color: black;
+  }
 
 }
 
@@ -108,7 +142,7 @@
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
 
   .research_container h1{
     text-align: center;

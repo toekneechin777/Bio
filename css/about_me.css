@@ -90,7 +90,53 @@
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
-  //CSS
+  .left_profile {
+    float: left;
+    width: 35%;
+    background-image: linear-gradient(to top right, #004c91, #007DB8);
+    height: 100%;
+  }
+
+  .right_profile {
+    width: 60%;
+    height: 100%;
+    float: left;
+    /* padding-right: 3vh; */
+  }
+
+  .prof-box {
+    padding: 2vh;
+    position: relative;
+    top: 10%;
+    height: 30%;
+    width: 80%;
+    left: 2.5%;
+    background-color: #333;
+  }
+
+  .right_profile h1{
+    text-align: center;
+    color: black;
+  }
+
+  .right_profile p {
+    color: black;
+    text-align: left;
+    padding-left: 3.5vh;
+    padding-top: 5vh;
+    font-size: 2.5vh;
+    font-family: "Verdana", "sans-serif";
+  }
+
+  .my-pic {
+    position: relative;
+    top: 2vh;
+    left: 8%;
+    width: 70%;
+    padding: 2vh;
+    background-color: #333;
+    border-radius: 50%;
+  }
 
 }
 
@@ -99,7 +145,7 @@
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .left_profile {
     float: left;
     width: 35%;
