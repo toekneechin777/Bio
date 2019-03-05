@@ -28,3 +28,13 @@
 .contact p {
   font-size: 2vh;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .contact {
+    top: -1vh;
+    padding-left: 1em;
+    padding-top: 5em;
+    height: 80%;
+    background-color: #D3D3D3;
+  }
+}
