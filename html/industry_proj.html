@@ -43,28 +43,53 @@
   		</div>
     </div>
 
-    <!-- Navigation Bar -->
     <nav class="topnav">
-        <a href="../index.html">Home</a>
-        <a href="about_me.html">About Me</a>
-        <div class="experience">
-          <button class="expbtn">Experience</button>
-          <div class="exp-content">
-            <a href="education.html">Education</a>
-            <a href="work.html">Work</a>
-          </div>
+        <div class="mobile">
+          <button onclick="navigate(1)" class="navbtn">...</button>
         </div>
-        <div class="res-proj">
-          <button class="resprojbtn">Research/Projects</button>
-          <div class="resproj-content">
-            <a href="research.html">Research</a>
-            <a href="personal_proj.html">Personal</a>
-            <a href="industry_proj.html">Industry</a>
+        <div id="nav-content">
+          <a id="home" href="../index.html">Home</a>
+          <a id="about" href="about_me.html">About Me</a>
+          <div class="experience">
+            <button class="expbtn">Experience</button>
+            <div class="exp-content">
+              <a href="education.html">Education</a>
+              <a href="work.html">Work</a>
+            </div>
           </div>
+          <div class="res-proj">
+            <button class="resprojbtn">Research/Projects</button>
+            <div class="resproj-content">
+              <a href="research.html">Research</a>
+              <a href="personal_proj.html">Personal</a>
+              <a href="industry_proj.html">Industry</a>
+            </div>
+          </div>
+          <a id="blog" href="#blog">Blog</a>
+          <a id="contact" href="contact.html">Contact</a>
         </div>
-        <a href="#blog">Blog</a>
-        <a href="contact.html">Contact</a>
+
     </nav>
+
+    <script>
+      function navigate(n) {
+        var navbar = document.getElementById("nav-content");
+        var mission = document.getElementsByClassName("mission");
+        var update = document.getElementsByClassName("update-title");
+        var slide = document.getElementsByClassName("slide");
+        if (navbar.style.display == "none") {
+          navbar.style.display = "block";
+          mission[0].style.top = "70vh";
+          slide[0].style.top = "77.5vh";
+          update[0].style.top = "76vh";
+        } else {
+          navbar.style.display = "none";
+          mission[0].style.top = "38vh";
+          slide[0].style.top = "45.5vh";
+          update[0].style.top = "44vh";
+        }
+      }
+    </script>
 
     <div class="flex_container">
       <div class="research_container">

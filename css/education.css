@@ -166,7 +166,111 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-  //CSS
+  .education_container h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-image: linear-gradient(to top right, #004c91, #007DB8);
+    height: 5vh;
+    position: relative;
+    top: -2.65vh;
+    padding-top: 0.2vh;
+    font-size: 3.5vh;
+  }
+
+  .blue p {
+    color: white;
+    line-height: normal;
+    font-size: 4vh;
+    position: absolute;
+    font-family: "Verdana", "sans-serif";
+    top: 40%;
+    display: block;
+    margin-top: -5vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    bottom: 2em;
+  }
+
+  .drop-down-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    outline: solid 2vh #333;
+  }
+
+  .drop-info {
+    top: 0;
+    min-height: 20em;
+    flex-direction: column;
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333;
+    color: white;
+    display: none;
+    padding: 2vh;
+  }
+
+  .drop-left {
+    float: left;
+    background-image: linear-gradient(to top right, #004c91, #007DB8);
+    height: 100%;
+    width: 35%;
+    padding: 0.5em;
+    flex: 1;
+  }
+
+  .drop-left p {
+    font-size: 1.2vh;
+    font-family: "Verdana", "sans-serif";
+  }
+
+  .drop-right {
+    background-color: #D3D3D3;
+    height: 100%;
+    width: 55%;
+    float: right;
+    padding: 0.5em;
+    flex: 1;
+  }
+
+  .classes {
+    -webkit-columns: 100px 3; /* Chrome, Safari, Opera */
+    -moz-columns: 100px 3; /* Firefox */
+    columns: 100px 3;
+  }
+
+
+  .drop-right p, li{
+    color: black;
+    font-family: "Verdana", "sans-serif";
+  }
+
+  .drop-right h2 {
+    color: black;
+    font-family: "Verdana", "sans-serif";
+    text-align: center;
+    font-size: 2vh;
+  }
+
+  .clear {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .clear::before {
+    content: '';
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .show {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
 
 }
 
